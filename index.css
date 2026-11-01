@@ -2,13 +2,14 @@ body{
     margin: 0;
 }
 .parent-nav{
-    height: 80px;
-    background-color: rgb(249, 249, 249);
-    /* margin-left: 300px;
-    margin-right: 300px; */
+    height: 70px;
+    background-color: rgb(238, 236, 236);
+    margin: 0px 238px;
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    position: fixed;
+    z-index: 4;
 }
 .image-card {
     /* background-color: rgba(0, 0, 0, 0.4); */
@@ -92,7 +93,7 @@ body{
     align-items: center;
 }
 .bottom-nav{
-    background-color: white;
+    background-color: rgb(215, 213, 213);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,10 +118,12 @@ body{
 }
 .media-links{
     color: white;
+    padding-left: 50px;
 }
 .login{
     color: white;
     font-family: "Bebas Neue", sans-serif;
+    padding-right: 50px;
 }
 .feature-cars{
     padding-top: 50px;
