@@ -4,15 +4,21 @@ body{
 .parent-nav{
     height: 80px;
     background-color: rgb(249, 249, 249);
-    margin-left: 300px;
-    margin-right: 300px;
+    /* margin-left: 300px;
+    margin-right: 300px; */
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .image-card {
     /* background-color: rgba(0, 0, 0, 0.4); */
     height: 700px;
     /* background-color: aqua; */
-    margin-left: 300px;
-    margin-right: 300px;
+    /* margin-left: 300px;
+    margin-right: 300px; */
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 }
 .image-card img {
@@ -55,8 +61,8 @@ body{
     z-index: 2;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 35px;
+    font-weight: 600;
+    font-size: 25px;
 }
 .parent-search input,
 .parent-search select{
@@ -64,7 +70,7 @@ body{
     border: solid 2px white;
     padding: 10px 30px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
     border-radius: 4px;
     margin-top: 10px;
@@ -154,7 +160,6 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin-top: 10%;
     color: gray;
-
 }
 .car-details p{
     font-family: 'Open Sans', sans-serif;
@@ -189,6 +194,7 @@ body{
     background-color: white;
     padding: 10px 10px;
     cursor: pointer;
+    transition: 0.3s ease-out;
 }
 .sort{
     display: flex;
@@ -217,6 +223,7 @@ body{
     gap: 0;
 }
 .gallery-card{
+    position: relative;
     width: 100%;
     height: 400px;
 }
@@ -225,4 +232,208 @@ body{
     height: 100%;
     object-fit: cover;
 }
-    
+.car-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    /* background-color: rgb(14, 47, 124); */
+    opacity: 0;
+    /* visibility: hidden; */
+    transition: opacity 0.6s ease;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.gallery-card:hover .car-info {
+    opacity: 1;
+    /* visibility: visible; */
+}
+.car-info h3{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 25%;
+    color: white;
+}
+.car-info p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 40px 40px;
+    color: white;
+}
+
+.car-info button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.mail{
+    margin-top: 5px;
+    width: 75%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 60px;
+}
+.subscribe{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.subscribe img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 75% 50%;
+    transform: scale(1.6);
+    filter: brightness(50%);
+    z-index: 1;
+}
+.email{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.email input{
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid white;
+    padding: 0px 0px;
+    font-size: 35px;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.email input::placeholder{
+    color: white; 
+    font-size: 25px;
+    padding: 0px 0px;
+    font-weight:200;
+}
+.email button{
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid white;
+    padding: 10px 40px;
+    font-size: 35px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+.email button:hover{
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid white;
+    padding: 10px 40px;
+    font-size: 35px;
+    color: black;
+    background-color:white;
+    font-weight: 200;
+    letter-spacing: 5px;
+    transition: 0.5s ease;
+}
+
+.newsletter{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.letter-content{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 200px;
+}
+.letter-content h3{
+    font-size: 30px;
+    text-align: start;
+    padding-left: 200px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(19, 19, 19);
+}
+.letter-content p{
+    padding: 0px 100px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 100px;
+    color: gray;
+}
+.newsletter img{
+    position: absolute;
+    padding-left: 150px;
+    padding-top: 17px;
+    z-index: 2;
+}
+.yellow-logo{
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.yellow-logo span{
+    color: gold;
+}
+.yellow-logo img{
+    width: 150px;
+    height: 150px;
+    margin-left: 5px;
+    padding: 60px;
+}
+.footer{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.about{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+    color: rgb(15, 15, 15);
+}
+.about span{
+    padding: 0px 20px;
+}
+.summary{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+    color: gray;
+    /* padding: 0px 0px; */
+}
+.footer-media{
+    color: gold;
+    margin-bottom: 20px;
+}
+.footer-media i{
+    padding: 0px 10px;
+}
+.bottom-line{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    height: 15px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+}
